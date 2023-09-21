@@ -1,4 +1,10 @@
 *{
-    margin: opx;
+    margin: 0px;
     padding: 0px;
+}
+header{
+    background-color: #238aff;
+    border-radius: 20px;
+    text-align: center;
+    margin: 2%;;
 }
