@@ -15,4 +15,11 @@ header{
 main{
     border-radius: 20px;
     padding: 2%;
+    margin: 2%;
+    background-color: #e1f4ff;
+}
+nav{
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 10px;
 }
