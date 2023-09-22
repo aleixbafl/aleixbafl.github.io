@@ -81,6 +81,16 @@ p {
     line-height: 1.5;
 }
 
+.columnes{
+    display: flex;
+}
+
+#fotoJo{
+    width: 50%;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
 /* Estilos para el título en la barra de título */
 .title {
     font-size: 28px;
