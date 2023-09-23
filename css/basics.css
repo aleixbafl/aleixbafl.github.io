@@ -49,7 +49,7 @@ nav a:hover {
 }
 
 main {
-    margin: 0 220px; /* Ajusta el margen derecho para dejar espacio al menú lateral */
+    margin: 0 220px 0 5%; /* Ajusta el margen derecho para dejar espacio al menú lateral */
     padding: 20px;
 }
 
