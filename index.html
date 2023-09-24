@@ -5,29 +5,54 @@
         <link rel="stylesheet" href="css/basics.css">
         <link rel="icon" type="image/x-icon" href="img/bafi.png">
         <title>Aleix BaFl</title>
+        
     </head>
+    
     <body>
         <header>
             <h1>Aleix Bautista Florensa</h1>
         </header>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre jo</a></li>
-                <li><a href="#2">Seccio 2</a></li>
-                <li><a href="#3">Seccio 3</a></li>
-            </ul>
-        </nav>
+        <div class="mostrarMenu">
+            <div class="franja-vertical">
+                <p>◄►</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre jo</a></li>
+                    <li><a href="#2">Seccio 2</a></li>
+                    <li><a href="#3">Seccio 3</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <script>
+            // Obtener elementos del DOM
+            const franjaVertical = document.querySelector('.franja-vertical');
+            const nav = document.querySelector('nav');
+
+            // Agregar evento de mouseenter para mostrar el menú
+            franjaVertical.addEventListener('mouseenter', () => {
+                franjaVertical.classList.add('activo');
+                nav.classList.add('activo');
+            });
+
+            // Agregar evento de mouseleave para ocultar el menú
+            nav.addEventListener('mouseleave', () => {
+                franjaVertical.classList.remove('activo');
+                nav.classList.remove('activo');
+            });
+
+        </script>
+        
         <main>
             <section id="sobre">
                 <h2 class="title">Sobre jo</h2>
                 <article>
                     <h3>Hola, soc Aleix Bautista Florensa!</h3>
-                    <div class="columnes">
-                        <p>
-                            Soc un apassionat de la tecnologia i el desenvolupament d'aplicacions multiplataforma. El meu camí en el món de la informàtica va començar amb la realització d'un cicle mitjà de Sistemes Informàtics i Xarxes (SMX), on vaig adquirir una base sòlida en el funcionament de sistemes i xarxes. Actualment, em trobo immers en l'emocionant segon any del cicle superior de Desenvolupament d'Aplicacions Multiplataforma (DAM).
-                        </p>
-                        <img src="img/fotoJo.jpeg" alt="foto" srcset="" id = "fotoJo">
-                    </div>
+                    <p>
+                        Soc un apassionat de la tecnologia i el desenvolupament d'aplicacions multiplataforma. El meu camí en el món de la informàtica va començar amb la realització d'un cicle mitjà de Sistemes Informàtics i Xarxes (SMX), on vaig adquirir una base sòlida en el funcionament de sistemes i xarxes. Actualment, em trobo immers en l'emocionant segon any del cicle superior de Desenvolupament d'Aplicacions Multiplataforma (DAM).
+                    </p>
+                    <img src="img/fotoJo.jpeg" alt="foto" srcset="" id = "fotoJo">
                     <p>
                         Durant el meu viatge en el món de la programació, he explorat i m'he submergit en diversos llenguatges i tecnologies. Les meves habilitats inclouen la creació de pàgines web atractives i funcionals utilitzant HTML i CSS per a donar vida a dissenys creatius i amigables. A més, he explorat el món de la programació orientada a objectes a través de Java, la qual cosa m'ha permès desenvolupar aplicacions versàtils i eficients.
                     </p>

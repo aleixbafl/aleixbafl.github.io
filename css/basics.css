@@ -17,40 +17,111 @@ h1 {
     margin: 0;
 }
 
-nav {
-    background-color: #6c757d;
-    color: white;
-    width: 200px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    overflow-y: auto;
-}
+@media screen and (min-width:800px) {
+    main {
+        margin: 0 220px 0 5%; /* Ajusta el margen derecho para dejar espacio al menú lateral */
+        padding: 20px;
+    }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+    nav {
+        background-color: #6c757d;
+        color: white;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        overflow-y: auto;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    nav li {
+        padding: 10px 0;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 15px;
+        display: block;
+    }
+    
+    nav a:hover {
+        background-color: #4e7dab;
+    }
+    .mostrarMenu p{
+        display: none;
+    }
 }
+@media screen and (max-width:800px) {
+    main{
+        margin: 5% 10% 5% 5%;
+        padding: 20px;
+    }
 
-nav li {
-    padding: 10px 0;
-}
+    /* Estilo para la franja vertical */
+    .franja-vertical {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 50px; /* Ancho de la franja */
+        background-color: #6c757d;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2; /* Asegura que la franja esté sobre el menú */
+    }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 15px;
-    display: block;
-}
+    /* Estilo para el ícono en la franja vertical */
+    .franja-vertical p {
+        color: white;
+        margin: 0;
+        font-size: 24px; /* Tamaño del ícono */
+        transform: rotate(180deg); /* Girar el ícono ◄ */
+    }
 
-nav a:hover {
-    background-color: #4e7dab;
-}
+    /* Estilo para el menú */
+    nav {
+        background-color: #6c757d;
+        color: white;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        overflow-y: auto;
+        transition: width 0.3s ease-in-out;
+        z-index: 1; /* Asegura que el menú esté detrás de la franja */
+    }
 
-main {
-    margin: 0 220px 0 5%; /* Ajusta el margen derecho para dejar espacio al menú lateral */
-    padding: 20px;
+    /* JavaScript controlará el estado "activo" */
+    .franja-vertical.activo + nav {
+        width: 200px; /* Ancho del menú */
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    nav li {
+        padding: 10px 0;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 15px;
+        display: block;
+    }
+
 }
 
 /* Estilos para las secciones */
@@ -80,15 +151,36 @@ p {
     font-size: 16px;
     line-height: 1.5;
 }
-
-.columnes{
-    display: flex;
+@media screen and (min-width:1000px) {
+    #fotoJo{
+        width: 25%;
+        border-radius: 50%;
+        border: 2px solid black;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-#fotoJo{
-    width: 50%;
-    border-radius: 50%;
-    border: 2px solid black;
+@media screen and (max-width:1000px) and (min-width:500px) {
+    #fotoJo{
+        width: 50%;
+        border-radius: 50%;
+        border: 2px solid black;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width:500px) {
+    #fotoJo{
+        width: 75%;
+        border-radius: 50%;
+        border: 2px solid black;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* Estilos para el título en la barra de título */
