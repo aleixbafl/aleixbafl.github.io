@@ -26,17 +26,17 @@
         </div>
 
         <script>
-            // Obtener elementos del DOM
+            //posar el .franja-vertical i nav a les variables franjaVertical i nav respectivament
             const franjaVertical = document.querySelector('.franja-vertical');
             const nav = document.querySelector('nav');
 
-            // Agregar evento de mouseenter para mostrar el menú
+            //Controlar que el ratoli passi per franjaVertical se mostre el menu
             franjaVertical.addEventListener('mouseenter', () => {
                 franjaVertical.classList.add('activo');
                 nav.classList.add('activo');
             });
 
-            // Agregar evento de mouseleave para ocultar el menú
+            // si el ratoli surt de laria que hi ha el nav s'oculte el menu
             nav.addEventListener('mouseleave', () => {
                 franjaVertical.classList.remove('activo');
                 nav.classList.remove('activo');
