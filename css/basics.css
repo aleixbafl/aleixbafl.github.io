@@ -9,10 +9,12 @@ header {
     background-color: #6c757d;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    text-decoration: none;
+    padding: 20px;
 }
 
+header a {
+    text-decoration: none;
+}
 h1 {
     margin: 0;
 }
