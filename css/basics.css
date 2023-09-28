@@ -214,16 +214,6 @@ p {
         margin: 5px;
     }
 
-    .llenguatges{
-        display: flex;
-        flex-direction: row;
-        margin: auto;
-    }
-
-    .llenguatges img{
-        width: 50px;
-        margin-right: 5px;
-    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -246,6 +236,18 @@ p {
     .columna{
         margin: 5px;
     }
+}
+
+
+.llenguatges{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.llenguatges img{
+    width: 50px;
+    margin-right: 5px;
 }
 
 main a {
