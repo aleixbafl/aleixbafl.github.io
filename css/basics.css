@@ -198,9 +198,9 @@ p {
         display: flex;
         flex-direction: row ;
     }
-    .grupColumnes img{
-        width: 95%;
+    .columna img{
         display: block;
+        width: 95%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 5px;
@@ -212,6 +212,17 @@ p {
     }
     .columna{
         margin: 5px;
+    }
+
+    .llenguatges{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    .llenguatges img{
+        width: 50px;
+        margin-right: 5px;
     }
 }
 
@@ -220,7 +231,7 @@ p {
         display: flex;
         flex-direction: column ;
     }
-    .grupColumnes img{
+    .columna img{
         width: 95%;
         display: block;
         margin-left: auto;
@@ -236,7 +247,6 @@ p {
         margin: 5px;
     }
 }
-
 
 main a {
     padding: 10px 10px;
