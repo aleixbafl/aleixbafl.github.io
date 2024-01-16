@@ -16,23 +16,58 @@
 </head>
 
 <body>
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom bg-secondary text-white">
-        Aleix Bautista Florensa
+    <header class="d-flex flex-wrap justify-content-center py-3 bg-dark text-white">
+        <b>Aleix Bautista Florensa</b>
     </header>
-    <main class="container bg-white">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary mb-4 border-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="/"><b>Inicio</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#sobreMi">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#programacionIdiomas">Programación e Idiomas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#experiencia">Experiencia</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#conocimAdicionales">Conocimientos Adicionales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container border-bottom mb-4">
         <article class="bg-light p-5 rounded">
-            <section>
+            <section id="sobreMi">
                 <h2>
                     Sobre mí
                 </h2>
                 <p>
-                    Soy un estudiante de Programación Multiplataforma, que he trabajado con lenguajes como Java, HTML, PHP.
-                    Cuento con 3 meses de experiencia en el sector de sistema de planificación de recursos empresariales. Lo
-                    que más me apasiona es desarrollar aplicaciones d'escritorio que requiera de backend, ya sea con MySQL,
+                    Soy un estudiante de Programación Multiplataforma, que he trabajado con lenguajes como Java, HTML,
+                    PHP.
+                    Cuento con 3 meses de experiencia en el sector de sistema de planificación de recursos
+                    empresariales. Lo
+                    que más me apasiona es desarrollar aplicaciones d'escritorio que requiera de backend, ya sea con
+                    MySQL,
                     MongoDB o cualquier tipo de BD.
                 </p>
             </section>
-            <section>
+            <section id="programacionIdiomas">
                 <h2>
                     Programación e Idiomas
                 </h2>
@@ -40,16 +75,17 @@
                     <div class="row">
                         <div class="col p-3">
                             <ul class="list-group">
-                                <li class="list-group-item active" aria-current="true">Lenguajes de programación</li>
+                                <li class="list-group-item active" aria-current="true"><b>Lenguajes de programación</b></li>
                                 <li class="list-group-item">Java</li>
                                 <li class="list-group-item">HTML</li>
                                 <li class="list-group-item">CSS</li>
                                 <li class="list-group-item">PHP</li>
+                                <li class="list-group-item">Visual Basic</li>
                             </ul>
                         </div>
                         <div class="col p-3">
                             <ul class="list-group">
-                                <li class="list-group-item active" aria-current="true">Idiomas</li>
+                                <li class="list-group-item active" aria-current="true"><b>Idiomas</b></li>
                                 <li class="list-group-item">
                                     <b>Catalán: </b>Nativo
                                 </li>
@@ -64,9 +100,36 @@
                     </div>
                 </div>
             </section>
+            <section id="conocimAdicionales">
+                <h2>
+                    Conocimientos Adicionales
+                </h2>
+                <ul>
+                    <li>
+                        <b>Android Studio:</b> Buenos conocimientos para desarollar aplicaciones para dispocitivos mobiles Android para distintos objetivos.
+                    </li>
+                    <li>
+                        <b>Visual Basic .NET:</b> Conocimientos para poder desarrollar una aplicación de escritorio adecuadamente.
+                    </li>
+                    <li>
+                        <b>Linux:</b> Estoy bastante familiarizado con entornos Linux, tanto para la parte de escritorio como por la parte de servidor.
+                    </li>
+                </ul>
+            </section>
+            <section id="experiencia">
+                <h2>
+                    Experiencia
+                </h2>
+                <p>
+                    Tengo 3 meses de experiencia en Sistema de Planificación de Recursos Empresariales (ERP) en Nex
+                    Tyres usando Navision 2009, permitiéndome obtener nuevos conocimientos respecto a los ERP's y todo
+                    lo que rodea en el ámbito de la gestión empresarial.
+                </p>
+            </section>
         </article>
     </main>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-secondary text-white">
+    <footer id="contacto"
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 bg-secondary text-white">
         <div class="container text-center">
             <div class="row p-3">
                 <div class="col">
